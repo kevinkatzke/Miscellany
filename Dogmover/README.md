@@ -9,7 +9,13 @@ This tool is built to help migrate Datadog `dashboards`, `monitors`, `users`, `s
 ## Install
 1. Clone this repository.
 2. Install all python dependencies: `pip install -r requirements.txt --upgrade`
-3. Add your _api_key_, _app_key_ to `config.json` for both the source (the organization where you will pull the resources from) and the destination (to where you will be pushing the resources to). See `config.json.example`. 
+
+## Setup Migration
+1. Login to the DD Account that shall be migrated with Partlow (DD Support-Admin)
+1. Generate an API Key for the migration named **DATDOG-MIGRATION**
+1. Generate an APP Key for the migration named **DATDOG-MIGRATION**
+1. Do the same for the DD-EU-Org that you want to migrate to (Destination)
+1. Add the _api_key_, _app_key_ to `config.json` for both the source (the organization where you will pull the resources from) and the destination (to where you will be pushing the resources to). See `config.json.example`. 
 
 
 ## Usage
